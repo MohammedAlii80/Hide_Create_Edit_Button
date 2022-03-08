@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+
+        <record id="hide_create_edit_button_inventory" model="res.groups">
+            <field name="name">Hide Create Edit Button Inventory</field>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+        <record id="hide_create_edit_button_purchase" model="res.groups">
+            <field name="name">Hide Create Edit Button Purchase</field>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+
+    </data>
+</odoo>
